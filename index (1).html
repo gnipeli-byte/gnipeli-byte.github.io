@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daisuke — Portfolio</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #fafaf8;
+    --accent: #d9622b;
+    --line: #e4e0d8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    line-height: 1.7;
+    padding: 0 20px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 0 120px;
+  }
+  header {
+    margin-bottom: 72px;
+  }
+  header h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  header p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+    max-width: 48ch;
+  }
+  section {
+    margin-bottom: 64px;
+  }
+  section h2 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #888;
+    margin: 0 0 24px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .card {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 24px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 4px 4px 0 var(--line);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--accent);
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .card p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  .note {
+    background: #f1efe9;
+    border: 1px solid var(--line);
+    padding: 20px 24px;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  .note p { margin: 0 0 8px; }
+  .note p:last-child { margin-bottom: 0; }
+  footer {
+    font-size: 0.8rem;
+    color: #999;
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>DAISUKE</h1>
+    <p>美大卒・Color Coordinator 2級。ビジュアルの判断力を軸に、HTML/CSS/JavaScriptでのコーディングとWebデザインに取り組んでいます。</p>
+  </header>
+
+  <section>
+    <h2>Web制作ポートフォリオ</h2>
+
+    <a class="card" href="https://gnipeli-byte.github.io/neuva/">
+      <h3>NEUVA</h3>
+      <p>架空の英会話スクールLP。商業的なランディングページを想定し、料金プランの切り替えなどインタラクティブな要素を実装。</p>
+    </a>
+
+    <a class="card" href="https://gnipeli-byte.github.io/karadano-signal/">
+      <h3>からだのシグナル</h3>
+      <p>架空の健康情報サイト。レスポンシブ対応に加え、AOS.js・Swiper.jsによるスクロールアニメーション・自動スライダーを実装。</p>
+    </a>
+
+    <a class="card" href="https://gnipeli-byte.github.io/codepedia/">
+      <h3>コードペディア</h3>
+      <p>Web学習者向け情報サイト。コンテンツ構成・保守のしやすさを意識して制作。</p>
+    </a>
+  </section>
+
+  <section>
+    <h2>グラフィック制作実績</h2>
+    <div class="note">
+      <p>YouTube動画のサムネイル画像制作を、Canvaを用いて約4年半にわたり実務として担当しておりました(リモート、在宅勤務)。</p>
+      <p>※業務委託先の意向により、実際の制作物の掲載は控えております。ご関心をお持ちいただいた場合は、個別にご相談ください。</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact: <a href="#">X (Twitter)</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
